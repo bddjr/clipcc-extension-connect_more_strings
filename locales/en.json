@@ -1,0 +1,14 @@
+{
+"nhjr.connect_more_strings.name":"custom connect strings block",
+"nhjr.connect_more_strings.description":"自定义连接字符串积木",
+
+"nhjr.connect_more_strings.category":"custom connect strings block",
+"nhjr.connect_more_strings.reporter":"use connect strings block",
+
+"nhjr.connect_more_strings.add_block":"add connect block [NUM]",
+"nhjr.connect_more_strings.delete_block":"delete connect block [NUM]",
+"nhjr.connect_more_strings.error":"error",
+"nhjr.connect_more_strings.readme":"readme",
+"nhjr.connect_more_strings.connectBlocks_json":"connectBlocks",
+"nhjr.connect_more_strings.deleteAll_block":"delete all connect block"
+}
