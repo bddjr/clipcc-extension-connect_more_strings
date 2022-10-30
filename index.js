@@ -290,7 +290,7 @@ https://github.com/NanHaiJuRuo/clipcc-extension-connect_more_strings`
         function: a=>{
             try{
                 var num= Math.round(Number(a.NUM));
-                if(!Number.isFinite(num) || num<1 || num>MaxNum) return this.logError('nhjr.connect_more_strings.add_block error: not allowed type!');
+                if(!Number.isFinite(num) || num<1 || num>MaxNum) return this.logError('nhjr.connect_more_strings.delete_block error: not allowed type!');
                 const sb= stage_blocks();
                 if(connectBlocks.includes(num)){
                     api.removeBlock('nhjr.connect_more_strings.returnBlock.'+num);
