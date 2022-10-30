@@ -301,7 +301,7 @@ https://github.com/NanHaiJuRuo/clipcc-extension-connect_more_strings`
                     var cache_str_connectBlocks = str_connectBlocks();
                     if(NUM.value !== cache_str_connectBlocks){
                         /*如果结果是空的，删除缓存积木，否则同步。*/
-                        if(cache_str_connectBlocks ==='{}'){
+                        if(cache_str_connectBlocks ==='[]'){
                             delete sb[connectBlocksCacheName];
                             delete sb[connectBlocksCacheValueName];
                             resetconnectBlocks();
