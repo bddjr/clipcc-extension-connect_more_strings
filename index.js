@@ -340,6 +340,7 @@ https://github.com/NanHaiJuRuo/clipcc-extension-connect_more_strings`
                 const sb= stage_blocks();
                 delete sb[connectBlocksCacheName];
                 delete sb[connectBlocksCacheValueName];
+                resetconnectBlocks();
                 loadReporter();
             }
         }
