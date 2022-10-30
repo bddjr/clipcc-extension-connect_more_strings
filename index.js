@@ -192,8 +192,7 @@ onInit_addBlocks(){
         messageId: 'nhjr.connect_more_strings.readme',
         categoryId: 'nhjr.connect_more_strings.category',
         function: ()=> `language: zh-cn
-该扩展会往项目文件里自动存入菜单信息，因此如果不是动态菜单，只需要一次性生成即可。
-该扩展只会往背景的积木区域里存入菜单信息。
+该扩展会往背景里自动存入积木信息，因此只需要一次性生成即可。
 
 请不要连点 delete connect block 积木，这会使积木栏出现故障。
 
