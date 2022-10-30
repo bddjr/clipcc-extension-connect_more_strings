@@ -264,7 +264,8 @@ https://github.com/NanHaiJuRuo/clipcc-extension-connect_more_strings`
                 }
                 /*开始缓存*/
                 var num= Math.round(Number(a.NUM));
-                if(!Number.isFinite(num) || num<1 || num>MaxNum || connectBlocks.includes(num)) return this.logError('nhjr.connect_more_strings.add_block error: not allowed type!');
+                if(!Number.isFinite(num) || num<1 || num>MaxNum ) return this.logError('nhjr.connect_more_strings.add_block error: not allowed type!');
+                if(connectBlocks.includes(num)) return ;
                 connectBlocks.push(num);
                 const NUM= sb[connectBlocksCacheValueName].fields.NUM;
                 var cache_str_connectBlocks = str_connectBlocks();
