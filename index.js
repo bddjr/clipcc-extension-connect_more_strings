@@ -43,18 +43,18 @@ const add_returnBlock_block= num =>{
         fun+= '+a._'+i;
     }
     api.removeBlock('nhjr.connect_more_strings.returnBlock.'+num);
-    api.addBlock({
-        opcode: 'nhjr.connect_more_strings.returnBlock.'+num,
-        type: type.BlockType.REPORTER,
-        messageId: messageId,
-        categoryId: 'nhjr.connect_more_strings.reporter',
-        param: param,
-        function: a=> eval(fun)
-        /* 为什么不用
-           delete a.mutation;
-           Object.values(a).join('')
-           因为这样的方法遇到对象会出问题，对象会排在字符串最后。*/
-    });
+    eval(`api.addBlock({
+            opcode: 'nhjr.connect_more_strings.returnBlock.'+num,
+            type: type.BlockType.REPORTER,
+            messageId: messageId,
+            categoryId: 'nhjr.connect_more_strings.reporter',
+            param: param,
+            function: a=>${fun}
+        })`);
+    /*  为什么不用
+        delete a.mutation;
+        Object.values(a).join('')
+        因为这样的方法遇到对象会出问题，对象会排在字符串最后。*/
 }
 
 const loadProjectCacheValue= sb =>{
