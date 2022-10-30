@@ -304,6 +304,7 @@ https://github.com/NanHaiJuRuo/clipcc-extension-connect_more_strings`
                         if(cache_str_connectBlocks ==='{}'){
                             delete sb[connectBlocksCacheName];
                             delete sb[connectBlocksCacheValueName];
+                            resetconnectBlocks();
                         }else NUM.value= cache_str_connectBlocks
                     }
                 }
