@@ -110,7 +110,7 @@ function removeCategorys(){
 
 /*————————————————————————————————————————————————————————————————————*/
 
-module.exports=class E extends Extension{
+module.exports= class E extends Extension{
 
 onUninit() {
     console.log('nhjr.connect_more_strings onUninit');
