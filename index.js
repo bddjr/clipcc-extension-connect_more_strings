@@ -7,6 +7,7 @@ const connectBlocksCacheName= 'ClipCCExtension.nhjr.connect_more_strings.connect
 var project_data= null;/*null初始化状态，true已加载缓存，object类型为待载入内容的对象*/
 const MaxNum= 100;
 
+let alerting = false;
 var extension_loded= false;
 var extension_loded_category= false;
 var extension_loded_reporter= false;
@@ -184,8 +185,6 @@ onInit() {
 }
 
 onInit_addBlocks(){
-    let alerting = false;
-
     api.addBlock({
         opcode: 'nhjr.connect_more_strings.readme',
         type: type.BlockType.REPORTER,
