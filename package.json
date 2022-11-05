@@ -1,0 +1,22 @@
+{
+"name": "clipcc-extension-connect_more_strings",
+"version": "1.0.1",
+"description": "test",
+"main": "index.js",
+"scripts": {
+  "build": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist && webpack --bail",
+  "build:dist": "NODE_ENV=production yarn run build"
+},
+"author": "nhjr",
+"license": "ISC",
+"dependencies": {
+  "mkdirp": "^1.0.4",
+  "rimraf": "^3.0.2"
+},
+"devDependencies": {
+  "copy-webpack-plugin": "^11.0.0",
+  "webpack": "^5.74.0",
+  "webpack-cli": "^4.10.0",
+  "zip-webpack-plugin": "^4.0.1"
+}
+}
