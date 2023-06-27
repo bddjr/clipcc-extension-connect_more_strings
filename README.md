@@ -1,4 +1,5 @@
-
+# 请移步到重写后的版本：https://github.com/bddjr/clipcc-extension-custom_menu_v2
+***
 该扩展使用了隐藏积木作为缓存，以保存到作品。
 ***
 
